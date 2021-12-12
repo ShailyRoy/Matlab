@@ -1,0 +1,49 @@
+%{
+clc;
+marks=input('enter final marks: ');
+
+marks
+if (marks>50 && marks<=60)
+    disp('Grade is: D')
+elseif(marks>60 && marks<=70)
+    disp('grade is : C')
+elseif(marks>70&&marks<=80)
+    disp('grade is:B')
+    elseif(marks>80&&marks<=90)
+    disp('grade is:B')
+elseif(marks>90)
+    disp('grade is:A')
+else
+    disp('failed')
+end 
+
+
+clc;
+num=input('Enter value to compARE factorial: ');
+x=1;
+fact=1;
+while (x<=num)
+    fact=fact*x;
+    x=x+1;
+end
+
+disp('Factorial is: '), disp(fact)
+
+%}
+
+
+
+
+clc;
+sum=0;
+for id=3:3:60
+   % disp(sum)
+    sum=sum+id;
+end
+fprintf('sum of the series is: ')
+fprintf(sum)
+fprintf('\n')
+
+
+
+

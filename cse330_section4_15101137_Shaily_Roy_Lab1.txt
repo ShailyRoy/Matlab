@@ -1,0 +1,25 @@
+
+%x= [-5:0.01:5];
+%y=x.^4+2.5*x.^3+2.5*x.^2+10*x-288;
+%plot(x,y);
+
+
+
+clc;
+close all;
+freq = 100;
+per = 1/freq;
+
+t1 = 0:(per/5):.06
+y1 = sin(2*pi*freq*t1);
+figure(1);
+subplot(211),plot(t1,y1),xlabel('Time in seconds '),ylabel(' y1 = sin100*pi*t1');
+subplot(212),plot(t1,y1),xlabel('Time in seconds '),ylabel(' y1 = sin100*pi*t1');
+
+t2 = 0:(per/20):0.06
+y2 = sin(2*pi*freq*t2);
+
+figure(2);
+
+subplot(211),plot(t1,y1),xlabel('Time in seconds '),ylabel(' y1 = sin100*pi*t'),grid on;
+subplot(212),plot(t1,y1),xlabel('Time in seconds '),ylabel(' y1 = sin100*pi*t');
